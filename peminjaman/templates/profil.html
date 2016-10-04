@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Perpustakaan</title>
+</head>
+<body>
+    <h1>Hello</h1>
+
+    <form>
+        <h1>Profil Anda ({{ request.session.jenis_akun }})</h1>
+        <p>Hi, {{ request.session.username }}</p>
+        <p>Nama : {{ petugas.nama }}</p>
+        <p>Jabatan : {{ petugas.jabatan }}</p>
+        <p><a href="/logout/">Logout</a> |
+            <a href="/tambah_peminjaman/">Tambah Peminjaman</a> |
+            <a href="/daftar_peminjaman/">Peminjaman</a>
+        </p>
+    </form>
+
+</body>
+</html>
